@@ -1,0 +1,1246 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>1. Groundwater Exam Solution - 2019-2020 &#8212; Groundwater I</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/.ipynb_checkpoints/custom-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/.ipynb_checkpoints/myfile-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../../_static/custom.js"></script>
+    <script src="../../_static/.ipynb_checkpoints/custom-checkpoint.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Q_and_A/GW_exam_2019_20';</script>
+    <link rel="shortcut icon" href="../../_static/logo.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="9. Simulating 1D Trench Flow" href="../tools/1D_ditchflow.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    The Interactive Groundwater-I Book
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Basics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../background/00_general.html">1. About this Groundwater Course and Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../background/03_basic_hydrogeology.html">2. Course Introduction &amp; Water Cycle</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Flow</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../flow/12_subsurface_structure.html">1. Subsurface Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flow/L3/13_gw_storage.html">2. Groundwater as a reservoir</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flow/L4/14_darcy_law_K.html">3. Darcy’s Law and Conductivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flow/L5/15_het_iso.html">4. Aquifer Heterogeneity and Anisotropy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flow/L6/16_darcy_law_3D.html">5. Steady-State Groundwater flow in 3D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flow/L7/17_quantify_flow.html">6. Quantifying 3D Groundwater Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flow/L8/18_wells.html">7. Wells</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Transport</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../transport/L9/21_conservative_transport.html">1. Conservative Transport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../transport/L10/22_reactive_transport.html">2. Reactive Mass Transport</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Modeling</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../modeling/31_intro_modeling.html">1. Background of Groundwater Modeling</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../background/01_python.html">1. Python Programming language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../background/02_jupyter.html">2. JUPYTER Notebook Interface for Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/T2/tutorial_02.html">3. Aquifer and Storage Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/T3/tutorial_03.html">4. Darcy Law and Conductivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/T4/tutorial_04.html">5. Effective K &amp; Recitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/T5/tutorial_05.html">6. Aquifer Heterogeneity/Anisotropy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/T6/tutorial_06.html">7. Flow in Confined/Unconfined Aquifer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/T7/tutorial_07.html">8. Wells</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/T8/tutorial_08.html">9. Conservative transport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/T9/tutorial_09.html">10. Reactive transport</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../tools/decay.html">1. Simulating Mass Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/sieve_analysis.html">2. Simulating Seive Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/effective_K.html">3. Simulating Effective hydraulic conductivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/uniform_flow_and_well.html">4. Uniform Flow and Well</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/aniso2D.html">5. Simulating the Anisotropy and flow direction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/type_curve_fit.html">6. Type curve and fitting pumping data tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/1D_advection_dispersion.html">7. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/Kinetics_degradation.html">8. Simulating Kinetics and Degradation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/1D_ditchflow.html">9. Simulating 1D Trench Flow</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Previous Years Q&amp;A</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Groundwater Exam Solution -  2019-2020</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/iGW-TU-Dresden/iGW_Book/blob/main/content/Q_and_A/GW_exam_2019_20.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/iGW-TU-Dresden/iGW_Book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/iGW-TU-Dresden/iGW_Book/issues/new?title=Issue%20on%20page%20%2Fcontent/Q_and_A/GW_exam_2019_20.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/Q_and_A/GW_exam_2019_20.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Groundwater Exam Solution -  2019-2020</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">xlrd</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1">#import ipysheet as ips</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">panel</span> <span class="k">as</span> <span class="nn">pn</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;xlrd&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<section id="groundwater-exam-solution-2019-2020">
+<h1><span class="section-number">1. </span>Groundwater Exam Solution -  2019-2020<a class="headerlink" href="#groundwater-exam-solution-2019-2020" title="Permalink to this heading">#</a></h1>
+<p><em>(The contents presented in this section were re-developed principally by Dr. P. K. Yadav with supervision from Prof. Rudolf Liedl)</em></p>
+<p><strong>Q1. Aquifer Types</strong>   (ca. 5 pts.)</p>
+<p>a. Differentiate between Aquifer, Aquitard and Aquiclude (3 points)</p>
+<p>b. Schematically present a confined aquifer (vertical cross-section) providing essential features with their legends (2 points)</p>
+<p><strong>Solution 1. a.</strong></p>
+<p>See slide: L03/08</p>
+<p>An <strong>aquifer</strong> or a groundwater reservoir can store and transmit significant (= exploitable) amounts of groundwater.</p>
+<p>An <strong>aquitard</strong> can store and transmit groundwater but to a much lesser extent than an (adjacent) aquifer.</p>
+<p>An <strong>aquiclude</strong> can store groundwater but cannot transmit groundwater.</p>
+<p><strong>Solution 1b</strong> - (L03/11)</p>
+<p> </p>
+<a class="reference internal image-reference" href="../../_images/Q1b_2019-20.png" id="f1"><img alt="../../_images/Q1b_2019-20.png" class="align-center" id="f1" src="../../_images/Q1b_2019-20.png" style="height: 400px;" /></a>
+<p><strong>Confined Aquifer</strong></p>
+<ol class="arabic simple">
+<li><p>The essential feature of confined aquifer is provided in the figure above.</p></li>
+</ol>
+<p><strong>Q2. Groundwater storage (3 pts.)</strong></p>
+<p>Dry season in Dresden (2018-19) led to intense extraction of groundawater in rural areas. At one location in a confined aquifer (storage coeff. 4·10<sup>-4</sup>, total porosity = 30%),  the pressure head was lowered by 150 m. The thickness of the aquifer was measured to be 90 m before the beginning of extraction and the compressibility of the porous medium in that region is estimated 6·10<sup>-8</sup> m<sup>2</sup>/N. Density of water can be assumed to be 1000 kg/m<sup>3</sup>.</p>
+<p>(Hint: <span class="math notranslate nohighlight">\(\Delta V_T = \alpha_{pm}\cdot\rho_w \cdot g \cdot  V_T \cdot  \Delta \psi \)</span>).</p>
+<p>a. Approximately how much water was extracted? (1 point)</p>
+<p>b. How much land subsidence due to water extraction is expected? (2 point)</p>
+<p><strong>Solution 2</strong></p>
+<p>Given relation:</p>
+<p>For part a. (see Tut 02/P4)</p>
+<p><span class="math notranslate nohighlight">\(
+S_s  = \frac{\Delta V_w}{V_T\cdot \Delta \psi}
+\)</span></p>
+<p>In confined aquifer <span class="math notranslate nohighlight">\(S\)</span> is used, which is obtained from:</p>
+<p><span class="math notranslate nohighlight">\(S = S_s \cdot m\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+ \frac{S}{m} = \frac{\Delta V_w}{A_T\cdot m \cdot \Delta \psi}
+\)</span></p>
+<p>So,</p>
+<p><span class="math notranslate nohighlight">\(  \frac{\Delta V_w}{A}  = S \cdot \Delta \psi\)</span></p>
+<p>For part b.</p>
+<p><span class="math notranslate nohighlight">\(\Delta V_T = \alpha_{pm}\cdot\rho_w \cdot g \cdot  V_T \cdot  \Delta \psi \)</span></p>
+<p><span class="math notranslate nohighlight">\(V_T = A\times h\)</span>, with <span class="math notranslate nohighlight">\(A\)</span> surface area and <span class="math notranslate nohighlight">\(h\)</span> aquifer thickness.</p>
+<p><span class="math notranslate nohighlight">\(\Delta V_T = A \times \Delta h\)</span>, with <span class="math notranslate nohighlight">\(\Delta h\)</span> change in thickness.</p>
+<p><span class="math notranslate nohighlight">\(A \times \Delta h= \alpha_{pm}\cdot\rho_w \cdot g \cdot  A \cdot h \cdot  \Delta \psi \)</span></p>
+<p><span class="math notranslate nohighlight">\(\Delta h = \alpha_{pm}\cdot\rho_w \cdot g \cdot h \cdot  \Delta \psi\)</span>, with <span class="math notranslate nohighlight">\(\Delta h\)</span> being the land subsidence</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#  solution 2 a</span>
+
+<span class="c1"># Given</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># m², assuming 1 m² aquifer area</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mi">90</span> <span class="c1"># m, aquifer height before extraction</span>
+<span class="n">d_psi</span> <span class="o">=</span> <span class="mi">150</span> <span class="c1"># m, change in pressure head</span>
+<span class="n">S_2</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="mi">10</span><span class="o">**-</span><span class="mi">4</span> <span class="c1">#  specific storage</span>
+<span class="n">rho_w</span> <span class="o">=</span> <span class="mi">1000</span> <span class="c1"># Kg/m³, density of water</span>
+<span class="n">a_pm</span> <span class="o">=</span> <span class="mi">6</span><span class="o">*</span> <span class="mi">10</span><span class="o">**-</span><span class="mi">8</span> <span class="c1"># m²/N = m-s²/kg, compressibility of porous medium</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span> <span class="c1"># m/s², gravity factor</span>
+
+<span class="c1">#Solution</span>
+
+<span class="n">d_V_w</span>  <span class="o">=</span> <span class="n">S_2</span><span class="o">*</span><span class="n">A</span><span class="o">*</span><span class="n">d_psi</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The water abstraction volume per m</span><span class="se">\u00b2</span><span class="s2"> aquifer is </span><span class="si">{0:0.3f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">d_V_w</span><span class="p">),</span> <span class="s2">&quot;m</span><span class="se">\u00b3</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The water abstraction volume per m² aquifer is 0.060 m³
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#  solution 2 b</span>
+
+
+<span class="c1"># Given</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># m², assuming 1 m² aquifer area</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mi">90</span> <span class="c1"># m, aquifer height before extraction</span>
+<span class="n">d_psi</span> <span class="o">=</span> <span class="mi">150</span> <span class="c1"># m, change in pressure head</span>
+<span class="n">Ss</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="mi">10</span><span class="o">**-</span><span class="mi">4</span> <span class="c1"># specific storage</span>
+<span class="n">rho_w</span> <span class="o">=</span> <span class="mi">1000</span> <span class="c1"># Kg/m³, density of water</span>
+<span class="n">a_pm</span> <span class="o">=</span> <span class="mi">6</span><span class="o">*</span> <span class="mi">10</span><span class="o">**-</span><span class="mi">8</span> <span class="c1"># m²/N = m-s²/kg, compressibility of porous medium</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span> <span class="c1"># m/s², gravity factor</span>
+
+<span class="c1">#interim calculation</span>
+<span class="n">V_T</span> <span class="o">=</span> <span class="n">A</span><span class="o">*</span><span class="n">h</span> <span class="c1"># m³, Aquifer volume before extraction </span>
+
+<span class="c1">#Solution</span>
+
+<span class="n">d_h</span>  <span class="o">=</span> <span class="n">a_pm</span><span class="o">*</span><span class="n">rho_w</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="o">*</span><span class="n">d_psi</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The water abstraction volume is </span><span class="si">{0:0.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">d_h</span><span class="p">),</span> <span class="s2">&quot;m&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The water abstraction volume is 7.95 m
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Q3. Aquifer Properties</strong> (ca. 10 pts.)</p>
+<p>The hydraulic conductivity of a sample (length 15 cm, diameter 5 cm) is to be determined using a constant-head permeameter. For that 250 ml water is passed through the sample in 30 s while maintaining the head difference of 2.5 cm. Properties of water provided are:
+density of water at 20°C: 1000 kg/m<sup>3</sup>;                                                  dynamic viscosity of water at 20°C: 1.0087·10<sup>-3</sup> Pa·s</p>
+<p>a.  Sketch the problem as accurately as possible providing essential features with legends (3 points)</p>
+<p>b. What will be the conductivity of the sample? (4 points)</p>
+<p>What is the intrinsic permeability of the sample? (2 points)</p>
+<p>c. What soil type is likely the sample? (1 point)</p>
+<p>(Hint: For the calculation of permeability, dynamic viscosity/density ratio is required.)</p>
+<p><strong>Solution 3</strong> -</p>
+<p><strong>Solution 3a</strong> (L05/15)</p>
+<p> </p>
+<a class="reference internal image-reference" href="../../_images/Q3a_2019-20.png" id="q3a"><img alt="../../_images/Q3a_2019-20.png" class="align-center" id="q3a" src="../../_images/Q3a_2019-20.png" style="height: 300px;" /></a>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Solution 3b** (L05/15)</span>
+
+<span class="c1"># Given</span>
+
+<span class="n">L_c</span> <span class="o">=</span> <span class="mi">15</span> <span class="c1"># cm, column length</span>
+<span class="n">Dia_c</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># cm, diameter column</span>
+<span class="n">V_in</span><span class="o">=</span> <span class="mi">250</span> <span class="c1"># mL, water entering the column</span>
+<span class="n">t_c</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1"># s, time required to pass</span>
+<span class="n">d_3h</span> <span class="o">=</span> <span class="mf">2.5</span> <span class="c1"># cm, head difference</span>
+
+<span class="c1"># interim calculation</span>
+<span class="n">A_c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">Dia_c</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">4</span> <span class="c1"># cm², Area of column</span>
+<span class="n">Q_c</span> <span class="o">=</span> <span class="n">V_in</span><span class="o">/</span><span class="n">t_c</span> <span class="c1"># cm³/s, assume 1mL = 1 cm³, Discharge out of column</span>
+
+<span class="c1">#solution </span>
+<span class="n">K_c</span> <span class="o">=</span> <span class="p">(</span><span class="n">Q_c</span><span class="o">*</span><span class="n">L_c</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">A_c</span><span class="o">*</span><span class="n">d_3h</span><span class="p">)</span> <span class="c1"># cm/s, conductivity </span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The area of the column is </span><span class="si">{0:0.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">A_c</span><span class="p">),</span> <span class="s2">&quot;cm</span><span class="se">\u00b2</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The discharge from the aquifer is </span><span class="si">{0:0.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Q_c</span><span class="p">),</span> <span class="s2">&quot;cm</span><span class="se">\u00b3</span><span class="s2">/s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The conductivity of the sample is </span><span class="si">{0:0.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K_c</span><span class="p">),</span> <span class="s2">&quot;cm/s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The conductivity of the sample is </span><span class="si">{0:0.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K_c</span><span class="o">/</span><span class="mi">100</span><span class="p">),</span> <span class="s2">&quot;m/s&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The area of the column is 19.63 cm²
+The discharge from the aquifer is 8.33 cm³/s
+The conductivity of the sample is 2.55 cm/s
+The conductivity of the sample is 0.0255 m/s
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Solution 3c** (L05/18)</span>
+
+<span class="c1"># Given</span>
+
+<span class="n">K_m</span> <span class="o">=</span> <span class="n">K_c</span><span class="o">/</span><span class="mi">100</span> <span class="c1"># m/s, conductivity</span>
+<span class="n">rho_3w</span> <span class="o">=</span> <span class="mi">1000</span> <span class="c1"># Kg/m³, density of water</span>
+<span class="n">nu_w</span> <span class="o">=</span> <span class="mf">1.0087</span><span class="o">*</span><span class="mi">10</span><span class="o">**-</span><span class="mi">3</span> <span class="c1"># Pa-s = Kg/m-s, dynamic viscosity </span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span> <span class="c1"># m/s², gravity factor</span>
+
+<span class="c1">#solution</span>
+<span class="n">k_c</span> <span class="o">=</span> <span class="n">K_m</span><span class="o">*</span><span class="n">nu_w</span><span class="o">/</span><span class="p">(</span><span class="n">rho_3w</span><span class="o">*</span><span class="n">g</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The permeability of the sample is </span><span class="si">{0:0.10f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k_c</span><span class="p">),</span> <span class="s2">&quot;m</span><span class="se">\u00b2</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The permeability of the sample is </span><span class="si">{0:0.2E}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k_c</span><span class="p">),</span> <span class="s2">&quot;m</span><span class="se">\u00b2</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The permeability of the sample is 0.0000000026 m²
+The permeability of the sample is 2.62E-09 m²
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Solution 3d</strong>
+(L05/11)</p>
+<p>The sample in the column is likely gravel or coarse sand.</p>
+<p><strong>Q4. Sieve Analysis (ca. 6 pts.)</strong></p>
+<p>Sieve experiments were performed with the bore samples and the following observations were obtained:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>mesh diameter [mm]</p></th>
+<th class="head text-center"><p>residue in the sieve [g]</p></th>
+<th class="head text-center"><p>Σ total</p></th>
+<th class="head text-center"><p>Σ/Σtotal</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>6</p></td>
+<td class="text-center"><p>0</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>2</p></td>
+<td class="text-center"><p>40</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>0.6</p></td>
+<td class="text-center"><p>250</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>0.2</p></td>
+<td class="text-center"><p>150</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>0.06</p></td>
+<td class="text-center"><p>60</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>&lt;0.06 (cup)</p></td>
+<td class="text-center"><p>10</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>a. Draw the granulometric curve in the diagram below.			(ca. 5 pts.)</p>
+<p>b. Briefly characterise the sediment.						(ca. 1 pt.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Solution 4 -(L03/18)</span>
+
+<span class="n">dia</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.06</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">]</span> <span class="c1"># mm, diameter &lt;0.06 (cup)= 0.001</span>
+<span class="n">mass</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span> <span class="c1"># g, the residue in seive </span>
+
+<span class="c1"># Calculation steps - filling table</span>
+<span class="n">Total_mass</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">mass</span><span class="p">)</span>  <span class="c1"># add the mass column to get total mass</span>
+<span class="n">retain_per</span> <span class="o">=</span> <span class="n">mass</span><span class="o">/</span><span class="n">Total_mass</span><span class="o">*</span><span class="mi">100</span>   <span class="c1"># retain percentage</span>
+<span class="n">retain_per_cumsum</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">retain_per</span><span class="p">)</span> <span class="c1"># get the cummulative sum of the reatined</span>
+<span class="n">passing_per</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">-</span> <span class="n">retain_per_cumsum</span> <span class="c1"># substract 100-cummsum to get passing %</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;mesh diameter [mm]&quot;</span><span class="p">:</span> <span class="n">dia</span><span class="p">,</span> <span class="s2">&quot;residue in the sieve [g]&quot;</span><span class="p">:</span> <span class="n">mass</span><span class="p">,</span> <span class="s2">&quot;Σtotal&quot;</span><span class="p">:</span> <span class="n">retain_per</span><span class="p">,</span> <span class="s2">&quot;Σ/Σtotal&quot;</span><span class="p">:</span> <span class="n">passing_per</span> <span class="p">}</span>
+
+<span class="n">df1</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">df1</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>mesh diameter [mm]</th>
+      <th>residue in the sieve [g]</th>
+      <th>Σtotal</th>
+      <th>Σ/Σtotal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>6.000</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>100.000000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2.000</td>
+      <td>40</td>
+      <td>7.843137</td>
+      <td>92.156863</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.600</td>
+      <td>250</td>
+      <td>49.019608</td>
+      <td>43.137255</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.200</td>
+      <td>150</td>
+      <td>29.411765</td>
+      <td>13.725490</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.060</td>
+      <td>60</td>
+      <td>11.764706</td>
+      <td>1.960784</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0.001</td>
+      <td>10</td>
+      <td>1.960784</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># plotting</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.linewidth&#39;</span><span class="p">]</span><span class="o">=</span><span class="mi">2</span>
+<span class="c1">#plt.rcParams[&quot;axes.edgecolor&quot;]=&#39;white&#39;</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;grid.linestyle&#39;</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;--&#39;</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;grid.linewidth&#39;</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">10</span><span class="p">],</span><span class="n">dia</span><span class="p">)</span> <span class="c1"># adding data to extend over 6 mm dia</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">100</span><span class="p">],</span><span class="n">passing_per</span><span class="p">)</span> <span class="c1"># adding 100% to plot</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogx</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;x-&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>  
+<span class="n">tics</span><span class="o">=</span><span class="n">x</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">tics</span><span class="p">);</span>  
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">110</span><span class="p">,</span><span class="mi">10</span><span class="p">));</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;grain size distribution&#39;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;grain size d [mm]&#39;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;grain fraction &lt; d ins </span><span class="si">% o</span><span class="s1">f total mass&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/7529773623395540cd9203ff217354b70951f06437a6b50bc9da30da53c231f2.png" src="../../_images/7529773623395540cd9203ff217354b70951f06437a6b50bc9da30da53c231f2.png" />
+</div>
+</div>
+<p><strong>solution 4b</strong></p>
+<p>The sample can be considered uniformly distributed as over 70% of sample falls in the sand size (0.2 mm-2 mm). Therefore, the sample can be considered sandy.</p>
+<p><strong>Q5. Aquifer characterization</strong> (ca. 8 pts.)</p>
+<p>Water levels in m a.s.l. were measured at three observation wells (see figure).</p>
+<a class="reference internal image-reference" href="../../_images/Q5_2019-2020.png" id="question-5"><img alt="../../_images/Q5_2019-2020.png" class="align-center" id="question-5" src="../../_images/Q5_2019-2020.png" style="height: 300px;" /></a>
+<p>a. Sketch hydraulic head isolines for increments of 0.5 m. (ca. 3 points.)</p>
+<p>b. Gravel layer (thickness (t1) = 1.5 m, and conductivity (K1) = 3.7 10-3 is embedded between two sandy layers (t2 = 2 m, K2 = 3·10-4 m/s; and t3 = 3 m, K3 = 4·10-4 m/s). If the hydraulic gradient is 1% and overall discharge is 1 m3/d per unit width of the aquifer, find the effective hydraulic conductivity considering a parallelly layered aquifer.</p>
+<p>(Hint: <span class="math notranslate nohighlight">\(K_{eff} = \frac{m}{\sum_{i=1}^n \frac{m_i}{K_i}}\)</span> or <span class="math notranslate nohighlight">\(K_{eff} =  \sum_{i=1}^n\frac{m_i\cdot K_i}{m}\)</span>  ) (ca. 2 points)</p>
+<p>c. Distinguish between homogeneity and heterogeneity, and isotropy and anisotropy (ca. 3 points)</p>
+<p><strong>Solution 5a</strong>
+(L07/08-09)</p>
+<p>The isolines and flow direction is provided in the figure below.</p>
+<a class="reference internal image-reference" href="../../_images/Q5a_2019-2020.png" id="question-5a"><img alt="../../_images/Q5a_2019-2020.png" class="align-center" id="question-5a" src="../../_images/Q5a_2019-2020.png" style="height: 300px;" /></a>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution 5b (L06/08-13)</span>
+
+<span class="c1"># Given:</span>
+
+<span class="n">G_t1</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1"># m, sandy layer top</span>
+<span class="n">G_t2</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="c1"># m, gravel layer middle</span>
+<span class="n">G_t3</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># m, sandy layer bottom </span>
+<span class="n">K_1</span> <span class="o">=</span>  <span class="mf">3.0</span><span class="o">*</span><span class="mi">10</span><span class="o">**-</span><span class="mi">4</span> <span class="c1"># m/s cond. in G_t1</span>
+<span class="n">K_2</span> <span class="o">=</span> <span class="mf">3.7</span><span class="o">*</span><span class="mi">10</span><span class="o">**-</span><span class="mi">3</span> <span class="c1"># m/s cond. in G_t2</span>
+<span class="n">K_3</span> <span class="o">=</span>  <span class="mf">4.0</span><span class="o">*</span><span class="mi">10</span><span class="o">**-</span><span class="mi">4</span> <span class="c1"># m/s cond. in G_t3</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">100</span> <span class="c1"># (), hydraulic gradient 1%</span>
+<span class="n">Q_5</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># m³/d per-W, discharge per unit width</span>
+
+<span class="c1">#intermediate calculation</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">G_t1</span><span class="o">+</span><span class="n">G_t2</span><span class="o">+</span><span class="n">G_t3</span> <span class="c1"># m, total aq. thickness</span>
+
+<span class="n">K_ef_h</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">m</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">G_t1</span><span class="o">*</span><span class="n">K_1</span> <span class="o">+</span> <span class="n">G_t2</span><span class="o">*</span><span class="n">K_2</span> <span class="o">+</span> <span class="n">G_t3</span><span class="o">*</span><span class="n">K_3</span><span class="p">)</span> <span class="c1"># m/s, eff. horizontal cond.</span>
+<span class="n">K_ef_v</span> <span class="o">=</span> <span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">G_t1</span><span class="o">/</span><span class="n">K_1</span> <span class="o">+</span> <span class="n">G_t2</span><span class="o">/</span><span class="n">K_2</span> <span class="o">+</span> <span class="n">G_t3</span><span class="o">/</span><span class="n">K_3</span><span class="p">)</span> <span class="c1"># # m/s, eff. vertical cond.</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The thickness of the aquifer is </span><span class="si">{0:0.3f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m</span><span class="p">),</span> <span class="s2">&quot;m&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The effective horizontal conductivity of the aquifer is </span><span class="si">{0:0.2E}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K_ef_h</span><span class="p">),</span> <span class="s2">&quot;m/s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The effective vertical conductivity of the aquifer is </span><span class="si">{0:0.2E}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K_ef_v</span><span class="p">),</span> <span class="s2">&quot;m/s&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The thickness of the aquifer is 6.500 m
+The effective horizontal conductivity of the aquifer is 1.13E-03 m/s
+The effective vertical conductivity of the aquifer is 4.46E-04 m/s
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Solution 5c</strong> (L06/23)</p>
+<p><strong>Homogeneity</strong>: An aquifer is homogeneous when its parameters are constant throughout the porous medium, i.e. the properties of the medium are independent of space</p>
+<p><strong>Heterogeneity</strong>: Heterogeneous aquifer have its properties varies in space or the properties are space dependent.</p>
+<p><strong>Isotropy</strong>: This relates to properties of aquifer being independent of direction, i.e., <span class="math notranslate nohighlight">\(K_v = K_h\)</span></p>
+<p><strong>Anisotropy</strong>: In this case the aquifer properties are direction dependent, i.e., <span class="math notranslate nohighlight">\(K_v \neq K_h\)</span>.</p>
+<p><strong>Q6. Well</strong> (ca. 5 pts.)</p>
+<p>a. Sketch the pumping scenario of an unconfined aquifer (vertical cross section) and label all possible quantities (ca 3 pts.)</p>
+<p>b. The conductivity of a confined aquifer (8 m thick) is estimated to be <span class="math notranslate nohighlight">\(4\cdot 10^{-4}\)</span> m/s. If the steady-state discharge 50 m<sup>3</sup>/s, using the Theis equation (<span class="math notranslate nohighlight">\(s = Q/4\pi T·W(u)\)</span>, with <span class="math notranslate nohighlight">\(W(u) = 15\)</span>), find the drawdown in the aquifer. (2 points)</p>
+<p><strong>Solution 6a</strong>
+(L08/16)</p>
+<p>Figure below presents the scenario of a well in an <em>unconfined</em> aquifer.</p>
+<a class="reference internal image-reference" href="../../_images/Q6_2019-2020.png" id="question-7b"><img alt="../../_images/Q6_2019-2020.png" class="align-center" id="question-7b" src="../../_images/Q6_2019-2020.png" style="height: 300px;" /></a>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Solution 6b</span>
+
+<span class="c1">#Given</span>
+
+<span class="n">Q_6</span> <span class="o">=</span> <span class="mi">50</span> <span class="c1"># m³/s, discharge</span>
+<span class="n">K_6</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="mi">10</span><span class="o">**-</span><span class="mi">4</span> <span class="c1"># m/s, conductivity</span>
+<span class="n">m_6</span> <span class="o">=</span> <span class="mi">8</span> <span class="c1"># m, thickness</span>
+<span class="n">W_u</span> <span class="o">=</span> <span class="mi">15</span> <span class="c1"># (), well function</span>
+
+<span class="c1"># interim cal.</span>
+<span class="n">T_6</span> <span class="o">=</span> <span class="n">K_6</span> <span class="o">*</span> <span class="n">m_6</span> <span class="c1"># m²/s, Transmissivity T = K*m</span>
+
+<span class="c1"># solution</span>
+<span class="n">s_6</span> <span class="o">=</span> <span class="p">(</span><span class="n">Q_6</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">T_6</span><span class="p">))</span> <span class="o">*</span> <span class="n">W_u</span> <span class="c1"># m, drawdown</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The Transmissivity of the aquifer is </span><span class="si">{0:0.5f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">T_6</span><span class="p">),</span> <span class="s2">&quot;m</span><span class="se">\u00b2</span><span class="s2">/s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The drawdown in the well is </span><span class="si">{0:0.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">s_6</span><span class="p">),</span> <span class="s2">&quot;m&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The Transmissivity of the aquifer is 0.00320 m²/s
+The drawdown in the well is 18650.97 m
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Q7. Conservative Transport</strong>  (ca. 7 pts.)</p>
+<p>a. How is reactive transport different to conservative transport in the aquifers. (2 points)</p>
+<p>b. With suitable sketch distinguish between advective flux and dispersive flux. (2 points)</p>
+<p>c. A column (L = 1.2 m and Ø = 5 cm) was packed with sandy soil (ne= 35%  K= 0,0002 m/s). The hydraulic head at the inlet and the outlet was set to 230 m and 235 m, resp. The NaCl solution with conc. 10 mg/L was steadily introduced to the column after saturating it with distilled water. The experiment condition was such that diffusive flow could be neglected.  You may make justified assumption for any missing information.</p>
+<p>c.i. What will be the advective mass flux at the outlet of the column? (1.5 points)</p>
+<p>c.ii. Considering initial concentration difference between inlet and outlet to be 10 mg/L, what    will be the dispersive mass flux at the outlet? (1.5 points)</p>
+<p>(Hint: Dispersive and Advective fluxes are either of <span class="math notranslate nohighlight">\( n_e \cdot v\cdot C\)</span> and <span class="math notranslate nohighlight">\(n_e\cdot \alpha \cdot v \cdot \Delta C/L\)</span>)</p>
+<p><strong>Solution 7a</strong> (L09/05)</p>
+<p>A chemical in groundwater is subject to conservative transport processes if there is:</p>
+<ul class="simple">
+<li><p>no interaction with the solid material,</p></li>
+<li><p>no interaction with other chemicals,</p></li>
+<li><p>no interaction with microbes.</p></li>
+</ul>
+<p>When either of the above are part of the groundwater, the transport process is reactive.</p>
+<p><strong>Solution 7b</strong> (L09/09)</p>
+<p>The sketch below distinguish between advective and dispersive fluxes. The figure in the left is of advective process and that in the right results to dispersive flux.</p>
+<a class="reference internal image-reference" href="../../_images/Q7b_2019-2020.png" id="id1"><img alt="../../_images/Q7b_2019-2020.png" class="align-center" id="id1" src="../../_images/Q7b_2019-2020.png" style="height: 300px;" /></a>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Solution 7c</span>
+
+<span class="n">L_7</span> <span class="o">=</span> <span class="mf">1.2</span> <span class="c1"># m, col. length</span>
+<span class="n">Dia_7</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># cm, col. diameter </span>
+<span class="n">ne_7</span> <span class="o">=</span> <span class="mf">0.35</span> <span class="c1"># (), effective porosity</span>
+<span class="n">K_7</span> <span class="o">=</span> <span class="mf">0.0002</span> <span class="c1"># m/s, conductivity</span>
+<span class="n">H_7in</span> <span class="o">=</span> <span class="mi">235</span> <span class="c1"># m, head inlet</span>
+<span class="n">H_7out</span> <span class="o">=</span> <span class="mi">230</span> <span class="c1"># m, head outlet</span>
+<span class="n">C_7</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># mg/L, NaCl concentration</span>
+<span class="n">al_7</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># m, assumed</span>
+<span class="n">C_7d</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># mg/L</span>
+
+<span class="c1">#intermediate calc.</span>
+<span class="n">i_7</span> <span class="o">=</span> <span class="p">(</span><span class="n">H_7in</span><span class="o">-</span><span class="n">H_7out</span><span class="p">)</span><span class="o">/</span><span class="n">L_7</span> <span class="c1"># (), head gradient</span>
+<span class="n">v_7dar</span> <span class="o">=</span> <span class="n">K_7</span><span class="o">*</span><span class="n">i_7</span> <span class="c1"># m/s, darcy velocity</span>
+<span class="n">v_7av</span> <span class="o">=</span> <span class="n">v_7dar</span><span class="o">/</span><span class="n">ne_7</span> <span class="c1"># m/s, average linear velocity</span>
+
+
+<span class="c1"># Solution</span>
+<span class="n">F_7ad</span> <span class="o">=</span> <span class="n">ne_7</span><span class="o">*</span><span class="n">v_7av</span><span class="o">*</span><span class="n">C_7</span> <span class="c1"># mg-m/L-s, advective flux </span>
+<span class="n">F_7dis</span> <span class="o">=</span> <span class="n">ne_7</span><span class="o">*</span><span class="n">al_7</span><span class="o">*</span><span class="n">v_7av</span><span class="o">*</span><span class="n">C_7d</span><span class="o">/</span><span class="n">L_7</span> <span class="c1"># mg-m/L-s, dispersive flux </span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The hydraulic gradient is </span><span class="si">{0:0.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i_7</span><span class="p">),</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The Darcy velocity is </span><span class="si">{0:0.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">v_7dar</span><span class="p">),</span> <span class="s2">&quot;m/s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The average linear velocity is </span><span class="si">{0:0.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">v_7av</span><span class="p">),</span> <span class="s2">&quot;m/s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The advective flux is </span><span class="si">{0:0.10f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">F_7ad</span><span class="p">),</span> <span class="s2">&quot;mg-m/L-s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The dispersive flux is </span><span class="si">{0:0.10f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">F_7dis</span><span class="p">),</span> <span class="s2">&quot;mg-m/L-s&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The hydraulic gradient is 4.1667 
+The Darcy velocity is 0.0008 m/s
+The average linear velocity is 0.0024 m/s
+The advective flux is 0.0083333333 mg-m/L-s
+The dispersive flux is 0.0069444444 mg-m/L-s
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Q8. Sorption Isotherms</strong> (ca. 10 pts)</p>
+<p>Five batch tests (different initial concentrations – see table below) were performed to determine the sorption properties of a sediment. For each batch 20 g of sediment in 30 mL of water were used. The measured equilibrium solute concentrations are also provided in the table.</p>
+<p>a)	Complete the above table								(ca. 3 pts.)</p>
+<p>b)	Plot the results in the diagram below and draw a Henry isotherm			(ca. 3 pts.)</p>
+<p>c)	How is retardation related to isotherm (ca. 2 points)
+(value and unit!)		(ca. 2 pts.).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">head</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Batch nr. &quot;</span><span class="p">,</span> <span class="s2">&quot;Initial Conc. (mg/L) &quot;</span><span class="p">,</span> <span class="s2">&quot;Equi. Conc. (mg/L)&quot;</span><span class="p">,</span> <span class="s2">&quot;Sorbed mass (g)&quot;</span><span class="p">,</span> <span class="s2">&quot;Sorbed mass/solid (mg/g)&quot;</span> <span class="p">]</span>
+<span class="n">bn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+<span class="n">C_0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">])</span><span class="c1"># mg/L, initial conc.</span>
+<span class="n">C_eq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">4.9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mf">9.8</span><span class="p">,</span> <span class="mf">13.2</span><span class="p">])</span><span class="c1"># mg/L, equilibrium conc.</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="n">ips</span><span class="o">.</span><span class="n">sheet</span><span class="p">(</span><span class="n">rows</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">row_headers</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column_headers</span><span class="o">=</span><span class="n">head</span><span class="p">)</span>
+<span class="n">ips</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">bn</span><span class="p">,</span> <span class="n">row_start</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
+<span class="n">ips</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">C_0</span><span class="p">,</span> <span class="n">row_start</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">ips</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">C_eq</span><span class="p">,</span> <span class="n">row_start</span><span class="o">=</span><span class="mi">0</span><span class="p">);</span> 
+<span class="n">s2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "7b03fc995ced408e92fcde0e4f8b321e", "version_major": 2, "version_minor": 0}</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SOlution of Problem 10 a (T07/HP9)</span>
+
+<span class="c1"># Given</span>
+<span class="n">v_ml</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1"># ml of water used in expt.</span>
+<span class="n">v_l</span> <span class="o">=</span> <span class="n">v_ml</span><span class="o">/</span><span class="mi">1000</span> <span class="c1"># L, unit conversion</span>
+<span class="n">m_s</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># g, solid mass used in expt.</span>
+
+<span class="n">bn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+<span class="n">C_0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">])</span><span class="c1"># mg/L, initial conc.</span>
+<span class="n">C_eq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">4.9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mf">9.8</span><span class="p">,</span> <span class="mf">13.2</span><span class="p">])</span><span class="c1"># mg/L, equilibrium conc.</span>
+<span class="n">s_m</span> <span class="o">=</span> <span class="p">(</span><span class="n">C_0</span><span class="o">-</span><span class="n">C_eq</span><span class="p">)</span><span class="o">*</span><span class="n">v_l</span>
+<span class="n">m_m</span> <span class="o">=</span> <span class="n">s_m</span><span class="o">/</span><span class="n">m_s</span><span class="c1"># mg/g, mass ratio</span>
+
+<span class="c1">#output</span>
+<span class="n">d8</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Batch Nr&quot;</span><span class="p">:</span> <span class="n">bn</span><span class="p">,</span> <span class="s2">&quot;Initial Conc. (mg/L)&quot;</span><span class="p">:</span> <span class="n">C_0</span><span class="p">,</span> <span class="s2">&quot;Equi. Conc. (mg/L)&quot;</span><span class="p">:</span> <span class="n">C_eq</span><span class="p">,</span> <span class="s2">&quot;Sorbed mass (g)&quot;</span><span class="p">:</span> <span class="n">s_m</span><span class="p">,</span> <span class="s2">&quot;Sorbed mass/solid (mg/g)&quot;</span> <span class="p">:</span><span class="n">m_m</span><span class="p">}</span>
+<span class="n">df9</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">d8</span><span class="p">);</span> <span class="n">df9</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Batch Nr</th>
+      <th>Initial Conc. (mg/L)</th>
+      <th>Equi. Conc. (mg/L)</th>
+      <th>Sorbed mass (g)</th>
+      <th>Sorbed mass/solid (mg/g)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>5</td>
+      <td>2.5</td>
+      <td>0.075</td>
+      <td>0.00375</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>10</td>
+      <td>4.9</td>
+      <td>0.153</td>
+      <td>0.00765</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>15</td>
+      <td>8.0</td>
+      <td>0.210</td>
+      <td>0.01050</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>20</td>
+      <td>9.8</td>
+      <td>0.306</td>
+      <td>0.01530</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>25</td>
+      <td>13.2</td>
+      <td>0.354</td>
+      <td>0.01770</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution of proble 10 (b) (T07/HP9)</span>
+<span class="c1"># fit</span>
+<span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r_value</span><span class="p">,</span> <span class="n">p_value</span><span class="p">,</span> <span class="n">std_err</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">linregress</span><span class="p">(</span><span class="n">C_eq</span><span class="p">,</span> <span class="n">m_m</span><span class="p">)</span> <span class="c1"># linear regression</span>
+
+<span class="c1">#plot and fit</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">C_eq</span><span class="p">,</span> <span class="n">m_m</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39; provided data&#39;</span><span class="p">);</span>
+<span class="n">pred</span> <span class="o">=</span> <span class="n">intercept</span> <span class="o">+</span> <span class="n">slope</span><span class="o">*</span><span class="n">C_eq</span> <span class="c1"># fit line</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">C_eq</span><span class="p">,</span> <span class="n">pred</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;y=</span><span class="si">{:.2E}</span><span class="s1">x+</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">slope</span><span class="p">,</span><span class="n">intercept</span><span class="p">))</span> <span class="p">;</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$C_</span><span class="si">{eq}</span><span class="s2"> $ mg/L&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$C_</span><span class="si">{a}</span><span class="s2"> $ mg/g&quot;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">);</span>  <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.2</span><span class="p">,</span> <span class="mf">0.014</span><span class="p">,</span><span class="s1">&#39;$R^2 = </span><span class="si">%0.2f</span><span class="s1">$&#39;</span> <span class="o">%</span> <span class="n">r_value</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.2</span><span class="p">,</span> <span class="mf">0.012</span><span class="p">,</span><span class="s1">&#39;$C_a = K_</span><span class="si">{d}</span><span class="s1">\cdot C_</span><span class="si">{eq}</span><span class="s1">$&#39;</span><span class="p">);</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/7356480cecd79270f041d1a7fdf177363ac870cbdf1acbae1b70d2403c692295.png" src="../../_images/7356480cecd79270f041d1a7fdf177363ac870cbdf1acbae1b70d2403c692295.png" />
+</div>
+</div>
+<p><strong>solution 8c</strong>
+(L10/13)</p>
+<p>The following relation relates Retardation (<span class="math notranslate nohighlight">\(R\)</span>) with linear isotherm (<span class="math notranslate nohighlight">\(K_d\)</span>)</p>
+<div class="math notranslate nohighlight">
+\[
+R = 1+ \frac{1-n_e}{n_e}\rho_s K_d
+\]</div>
+<p>with effective porosity <span class="math notranslate nohighlight">\(n_e\)</span>, solid density <span class="math notranslate nohighlight">\(\rho_s\)</span>.</p>
+<p><strong>Q9. Groundwater Modelling</strong> (ca. 8 points.)</p>
+<p>a. Distinguish between conceptual model and mathematical model; and between analytical solution and empirical solution (ca. 4 points).</p>
+<p>b. Draw a conceptual model for a rectangular aquifer 100 m long and 20 m wide. Discretize the domain with 1/10 of the length length-wise and 1/5 of the width width-wise. Assure that flow in the model is from left to right direction (ca. 3 points).</p>
+<p>c. How is a no-flow boundary condition mathematically defined? (ca. 1 point)</p>
+<p><strong>Solution 9a</strong>
+(L11/04-06)</p>
+<p>A model or also a <em>conceptual model</em> is a representation, an image or a description of a real system.</p>
+<p>example for a real system: porous medium with water flowing through the pores (Darcy experiment)</p>
+<p>A <em>mathematical model</em> provides a quantitative representation of the relevant system components, processes and impacts in the area of investigation. The quantitative representation is based on mathematical equations.</p>
+<p><em>Analytical solution</em> : These are exact mathematical expressions solving the model equations.</p>
+<p><em>Emperical solution</em> : These are solution based on experimental results.</p>
+<p><strong>Solution 9b</strong> - (L14/12)</p>
+<a class="reference internal image-reference" href="../../_images/Q9b_2019-2020.png" id="question-9b"><img alt="../../_images/Q9b_2019-2020.png" class="align-center" id="question-9b" src="../../_images/Q9b_2019-2020.png" style="height: 300px;" /></a>
+<p><strong>Solution 9c</strong>
+(L13/16)</p>
+<p>A no-flow boundary condition is special case of second type or Neumann boundary condition. For no flow condition head gradient is equated to zero, i.e., there is no gradient and thus no flow (water flows from high to low head). Mathematically, this is:</p>
+<p><span class="math notranslate nohighlight">\(\frac{dh}{dx} = 0 \)</span> for no-flow along <span class="math notranslate nohighlight">\(x-\)</span>axis, with <span class="math notranslate nohighlight">\(h\)</span> representing head.</p>
+<p>Good Luck.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "iGW-TU-Dresden/iGW_Book",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content\Q_and_A"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../tools/1D_ditchflow.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Simulating 1D Trench Flow</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr Prabhas K. Yadav
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+ All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
