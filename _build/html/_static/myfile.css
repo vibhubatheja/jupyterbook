@@ -1,0 +1,14 @@
+p {
+    text-align: justify
+}
+
+h1 {
+    color: #db8a18 !important; 
+    font-weight: bold
+}
+
+@media print {
+    .bd-toc {
+        visibility: hidden;
+    }
+}
